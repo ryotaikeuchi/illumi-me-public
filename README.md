@@ -1,5 +1,7 @@
 # illumi-me
 
+[![ProtoPedia](https://protopedia.net/prototype/7997/badge)](https://protopedia.net/prototype/7997)
+
 LINEビーコンでユーザーの接近を検知し、カスタマイズされたLEDテープの点灯パターンを表示するシステム
 
 > [!NOTE]
