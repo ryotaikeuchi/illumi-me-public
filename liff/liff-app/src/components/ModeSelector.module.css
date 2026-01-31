@@ -1,0 +1,54 @@
+/* liff/liff-app/src/components/ModeSelector.module.css */
+.controlRow {
+  padding: 0.6rem 0.75rem;
+  background-color: #444444; /* 少し明るめの黒系に変更 */
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.controlRow.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.flexRow {
+  display: flex;
+  gap: 0px; /* App.jsxではgap: '0px'だったため */
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #cccccc; /* 白系に変更 */
+}
+
+.button {
+  flex: 1 1 120px;
+  padding: 0.5rem 0.4rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #444444; /* 非アクティブ時も黒系に */
+  color: #ffffff; /* 非アクティブ時は白系に */
+  font-size: 0.9rem;
+  box-shadow: none;
+}
+
+/* ボタンのアクティブ状態 */
+.button.active {
+  background-color: #FFD700; /* アクティブ時は黄色系 */
+  color: #333333; /* アクティブ時は黒系 */
+}
+
+/* 最初のボタンの右側にボーダー */
+.flexRow > .button:first-child {
+    border-right: 1px solid #999999;
+}

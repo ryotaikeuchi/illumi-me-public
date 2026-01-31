@@ -1,0 +1,55 @@
+/* liff/liff-app/src/components/ColorPalette.module.css */
+.controlRow {
+  padding: 0.6rem 0.75rem;
+  background-color: #444444; /* 少し明るめの黒系に変更 */
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem; /* App.jsxではmarginBottom: 0 が指定されていたが、ここでは共通として0.5rem */
+  box-sizing: border-box;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.controlRow.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  max-width: 260px; /* App.jsxと同じ */
+  margin: 0 auto;
+  width: 100%;
+}
+
+.colorLabel {
+  display: block;
+  position: relative;
+  /* cursor: pointer; Inputの方で設定 */
+}
+
+.colorCircle {
+  width: 100%;
+  padding-top: 100%; /* アスペクト比1:1 */
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  /* background-color はinline styleで設定 */
+}
+
+.colorInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* カラーピッカー自体は非表示 */
+  cursor: pointer;
+}

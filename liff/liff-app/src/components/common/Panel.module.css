@@ -1,0 +1,11 @@
+/* liff/liff-app/src/components/common/Panel.module.css */
+.panel {
+  background-color: #333333; /* 黒系に変更 */
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3);
+  color: #ffffff; /* 白系に変更 */
+  box-sizing: border-box;
+  width: 100%;
+}

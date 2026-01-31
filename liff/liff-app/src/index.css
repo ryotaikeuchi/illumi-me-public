@@ -1,0 +1,13 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Optional: If you want to use a more robust CSS reset */
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */

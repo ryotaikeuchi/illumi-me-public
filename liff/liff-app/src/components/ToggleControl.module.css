@@ -1,0 +1,52 @@
+/* liff/liff-app/src/components/ToggleControl.module.css */
+.controlRow {
+  padding: 0.6rem 0.75rem;
+  background-color: #444444; /* 少し明るめの黒系に変更 */
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem;
+  cursor: pointer; /* 親要素にonClickがあるのでカーソル変更 */
+}
+
+.label {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.toggleTrack {
+  width: 3.2rem;
+  height: 1.6rem;
+  background-color: #444444; /* オフは黒系 */
+  border-radius: 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggleTrack.on {
+  background-color: #FFD700; /* オンは黄色系 */
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
+.toggleThumb {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem; /* オフの位置 */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.toggleTrack.on .toggleThumb {
+  left: 1.75rem; /* オン時の位置 */
+}

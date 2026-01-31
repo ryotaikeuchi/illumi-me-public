@@ -1,0 +1,8 @@
+/* liff/liff-app/src/components/PreviewPanel.module.css */
+.sectionTitle {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  /* border-bottom など、必要に応じて追加 */
+}

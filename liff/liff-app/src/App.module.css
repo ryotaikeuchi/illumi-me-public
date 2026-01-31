@@ -1,0 +1,28 @@
+/* liff/liff-app/src/App.module.css */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8B0000, #006400); /* 緑と赤のグラデーションに変更 */
+  padding: 0.5rem 1rem;
+  font-family: sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 100%;
+  width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center; /* ロード中のテキストを中央寄せ */
+  padding-top: 100px; /* ロード中のテキストを中央寄せ */
+}
+
+.loadingText {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.errorText {
+  font-size: 1.2rem;
+  color: red;
+}

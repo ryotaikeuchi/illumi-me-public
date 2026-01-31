@@ -1,0 +1,41 @@
+/* liff/liff-app/src/components/LedPreview.module.css */
+.previewInner {
+  background-color: #262626; /* Dark background */
+  border-radius: 0.75rem;
+  position: relative;
+  overflow: hidden;
+  height: 14rem;
+  margin-top: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+  box-shadow: inset 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.ledTapeContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  transform: rotate(-8deg); /* Slight rotation for visual effect */
+  box-sizing: border-box;
+}
+
+.ledTape {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 12%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.led {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  /* BackgroundColor, boxShadow, opacity handled inline via style prop */
+}
